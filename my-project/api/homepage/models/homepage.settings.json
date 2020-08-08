@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "homepage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.gallery"
+    },
+    "textBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.text-block"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
